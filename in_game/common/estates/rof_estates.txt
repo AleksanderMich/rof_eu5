@@ -1,0 +1,41 @@
+grantville_citizens_estate = {
+    color = pop_grantville_citizens
+    power_per_pop = 1
+    tax_per_pop = 10
+    rival = -0.01
+    alliance = 0.01
+
+    bank = yes
+
+    revolt_court_language = common_language
+    characters_have_dynasty = never
+    can_spawn_random_characters = yes
+    can_generate_mercenary_leaders = no
+
+    satisfaction = {
+        stability_cost = -0.4
+        court_spending_cost = -0.3
+        global_pop_promotion_speed_modifier = 0.5
+    }
+
+    high_power = {
+        monthly_towards_free_subjects = societal_value_significant_monthly_move
+        global_production_efficiency = -0.5
+    }
+
+    low_power = {
+        monthly_republican_tradition = -0.3
+    }
+
+    power = {
+        parliament_base_support = 0.4
+    }
+
+    opinion = {
+        add = {
+            desc = "ESTATE_OPINION_BASE"
+            value = "opinion(scope:target)"
+            multiply = 0.05
+        }
+    }
+}

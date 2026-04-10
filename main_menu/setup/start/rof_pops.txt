@@ -1,0 +1,8 @@
+INJECT:locations = {
+    apolda = {
+        define_pop = { type = nobles size = 0 culture = american_culture religion = lutheran }
+        define_pop = { type = clergy size = 0.003 culture = american_culture religion = lutheran }
+        define_pop = { type = burghers size = 3.500 culture = american_culture religion = lutheran }
+        define_pop = { type = peasants size = 2.447 culture = american_culture religion = lutheran }
+    }
+}

@@ -1,0 +1,54 @@
+countries = {
+    countries = {
+        GTV = {
+            own_control_core = {
+                apolda
+            }
+
+            capital = apolda
+
+            country_rank = rank_county
+            discovered_provinces = {
+                thuringer_becken_province
+                saale_province
+            }
+
+            government = {
+                type = republic
+                ruler = gtv_mike_stearns
+                heir_selection = republic_4_year_terms
+
+                laws = {
+                    marriage_law = monogamous_marriage
+                    republican_foundation_law = republicanism_policy
+                    administrative_system = central_councils
+                    legal_code_law = civil_law_policy
+                    distribution_of_power_law = dop_favor_the_commoners
+                    censorship = no_censorship
+                    heir_religion_law = heir_any_religion
+                    immigration_law = open_borders_law
+                    coin_laws = gold_and_silver_coins
+                    cultural_traditions_law = civil_society
+                    education_masses_law = secular_education
+                    mining_law = burghers_mining_law
+                }
+
+                centralization_vs_decentralization = -25
+                aristocracy_vs_plutocracy = 100
+                serfdom_vs_free_subjects = 100
+                traditionalist_vs_innovative = 75
+                spiritualist_vs_humanist = 80
+                mercantilism_vs_free_trade = 65
+                offensive_vs_defensive = 30
+                quality_vs_quantity = -25
+                belligerent_vs_conciliatory = 15
+                capital_economy_vs_traditional_economy = -75
+                individualism_vs_communalism = -25
+                outward_vs_inward = 20
+                land_vs_naval = -50
+            }
+
+            starting_technology_level = 3
+        }
+    }
+}

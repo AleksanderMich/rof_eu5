@@ -1,0 +1,78 @@
+american_language = {
+    color = map_GTV
+
+    family = germanic_language_family
+
+    male_names = {
+        name_adam name_adrian name_alan name_alberic name_albert name_alexander name_alfred name_andrew name_anthony name_archibald name_arnold name_arthur name_emmerich
+        name_benedict
+        name_cecil name_charles name_christian name_christopher name_clement name_cuthbert
+        name_daniel name_david name_dennis
+        name_edgar name_edmond name_edward name_eric
+        name_francis
+        name_gawain name_godfrey name_george name_gerald name_gerard name_gilbert name_giles name_gregory
+        name_henry name_hugh Humphrey
+        name_enguerrand
+        name_james name_john
+        name_laurence name_louis name_lucas
+        name_mark name_martin name_matthew name_maurice name_michael
+        name_nicholas name_nigel name_norman
+        name_eugene
+        name_patrick name_peter name_philip
+        name_ralph name_reginald name_richard name_robert name_roderick name_roger
+        name_simeon name_stephen
+        name_theobald name_theodore name_thomas
+        name_vincent
+        name_walter name_wilfred name_william
+
+        # Protestant
+        name_aaron name_abraham
+        name_bartholomew name_benjamin
+        name_cornelius
+        name_elias Ezra
+        name_gabriel
+        name_isaac
+        Jason name_jonas Jonathan name_jordan name_joseph name_joshua Josiah
+        name_moses
+        Nathan Nathaniel
+        name_samuel name_salomon
+        name_timothy
+        name_zechariah
+
+        # Islamic
+        name_muhammad
+    }
+
+    female_names = {
+        Abigail name_agatha name_agnes name_alice Alison Amy name_anna name_annabel
+        name_barbara name_beatrix Bridget
+        name_caroline name_catherine name_cecile name_charlotte name_christine name_clemence
+        Deborah Denise Dinah name_dorothy
+        name_edith name_eleanor Ellen name_elizabeth name_emma Esther Eve
+        name_frances
+        name_grace
+        Hannah Harriet
+        Isolde
+        Jemima name_joanna Joyce name_judith
+        Lucy name_lydia
+        Mabel name_margaret Marjorie Marion name_martha name_matilda Maud
+        Nancy
+        Patience Pernel Phoebe Phyllis
+        name_rachel Rebecca Rosamund name_rosa Ruth
+        name_sara name_sophia name_susan name_sybil
+        Violet
+    }
+
+    dynasty_template_keys = {
+        SOMEONE_OF_SOMEWHERE
+        SOMEONE_FROM_SOMEWHERE
+        SOMEONE_THE_SOMETHING_OF_SOMEWHERE__TYPE
+        SOMEONE_THE_SOMEDESC_SOMETHING__ADJ_TYPE
+        SOMEONE_THE_SOMELOCALITY_SOMETHING__TYPE
+        SOMEONE_THE_SOMENATIONALITY_SOMETHING__TYPE
+    }
+
+    location_prefix = "location_prefix_english"
+
+    descendant_prefix = "descendant_prefix_english"
+}

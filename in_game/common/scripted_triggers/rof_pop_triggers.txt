@@ -1,0 +1,5 @@
+is_in_grantville = {
+    owner ?= {
+        tag = GTV
+    }
+}

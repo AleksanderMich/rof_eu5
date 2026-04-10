@@ -1,0 +1,14 @@
+character_db = {
+    gtv_mike_stearns = {
+        first_name = { name = Mike}
+        last_name = { name = Stearns}
+        culture = american_culture
+        religion = lutheran
+        adm = 42 dip = 91 mil = 64
+        birth = grantville
+        birth_date = 1300.2.16
+        ruler_trait = well_advised
+        ruler_trait = charismatic_negotiator
+        tag = GTV
+    }
+}

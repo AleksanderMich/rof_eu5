@@ -1,0 +1,5 @@
+american_culture = {
+    language = american_language
+
+    color = map_GTV
+}

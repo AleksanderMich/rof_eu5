@@ -1,0 +1,13 @@
+on_game_start = {
+    on_actions = {
+        on_context_events
+    }
+}
+
+on_context_events = {
+    effect = {
+        c:GTV = {
+            trigger_event_non_silently = flavor_gtv.1
+        }
+    }
+}

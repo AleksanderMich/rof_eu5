@@ -1,0 +1,27 @@
+grantville_citizens = {
+    color = pop_grantville_citizens
+
+    promote_to = burghers
+    promote_to = clergy
+    promote_to = soldiers
+    promote_to = laborers
+
+    pop_food_consumption = 1.0
+
+    promotion_factor = 1.0
+    migration_factor = 0.5
+
+    city_graphics = 0.5
+
+    grow = yes
+
+    counts_towards_market_language = yes
+
+    grantville_citizens_estate = { is_in_grantville = yes}
+
+    literacy_impact = {
+        local_production_efficiency = 1.0
+        research_speed_modifier = 0.1
+        local_pop_promotion_speed_modifier = 1.0
+    }
+}

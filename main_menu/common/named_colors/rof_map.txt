@@ -1,0 +1,7 @@
+colors = {
+    # country colors
+    map_GTV = rgb { 122 188 237 }
+
+    # pop colors
+    pop_grantville_citizens = rgb { 255 227 90 }
+}

@@ -1,0 +1,10 @@
+﻿{
+	"name":	"Ring of Fire",
+	"id":	"pikles.rof",
+	"version":	"0.1",
+	"supported_game_version":	"1.1.10",
+	"short_description":	"A mod based on the 1632 books written by Eric Flint.",
+	"tags":	["Alternative history", "Overhaul"],
+	"relationships":	[],
+	"game_custom_data":	{}
+}

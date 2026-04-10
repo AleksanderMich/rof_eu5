@@ -1,0 +1,7 @@
+GTV = {
+    color = map_GTV
+    color2 = rgb { 122 188 237 }
+
+    culture_definition = american_culture
+    religion_definition = lutheran
+}

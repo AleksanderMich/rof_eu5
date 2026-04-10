@@ -1,0 +1,24 @@
+namespace = flavor_gtv
+
+flavor_gtv.1 = {
+    type = country_event
+    title = flavor_gtv.1.title
+    desc = flavor_gtv.1.desc
+    fire_only_once = yes
+
+    dynamic_historical_event = {
+        tag = GTV
+    }
+
+    trigger = {
+        always = yes
+    }
+
+    option = {
+        name = flavor_gtv.1.a
+        historical_option = yes
+        add_gold = 100
+    }
+
+
+}
