@@ -50,8 +50,6 @@ countries = {
 
             brahestad siikalatva uleaborg utajarvi kuivaniemi simo ranua pudasjarvi taivalkoski posio
 
-			valkeasaari kyyrola heinjoki jaskis
-
             asele volgsjo tarna stensele ortrask lycksele arvidsjaur
             sorsele silbojock arjeplog akkajaur
             jokkmokk kvikkjock sarek porjus socksjock gellivaara
@@ -61,11 +59,21 @@ countries = {
             kautokeino karasjok
 
             heinola ristiina mikkeli kangasniemi joroinen olofsborg savonranta rautavaara kuopio idensalmi
-
+            kajana paltamo kuusamo suomussalmi sotkamo kuhmo
 		}
 
         own_control_integrated = {
-
+            valkeasaari kyyrola heinjoki jaskis
+            konevets korela kurkijoki sordavala loimola salmi vartsila suojarvi ilomantsi mohko lieksa joensuu juuka nurmes
+            toksovo oreshek neva markovo lisino martyshkino
+            koporye khotchino moloskovitsa yama soikino ivangorod
+            staropolye
+            narva vasknarva rakvere toolse paide tallinn padise rapla
+            lihula st_martin hapsal kaina
+            poltsamaa suure_jaani parnu viljandi karksi saarde
+            vonnu vastseliina tartu valka
+            limbazi straupe salaspils riga sigulda koknese
+            valmiera cesis aluksne rauna gulbene
         }
 
 
@@ -618,47 +626,39 @@ countries = {
 		}
 	}
 
-	KRL = {
-		# add_pops_from_locations = {
-		# 	maloshuyka sumsky_posad unezhma vygozero
-		# 	chelmuzhi
-		# 	repola karhumagi kizhi lindjarvi nadvoitsy puatane sellinkyla
-		# 	shuya_karelia kondpoga
-		# 	tunkuo ontajarvi
-		# 	kem saarijoki
-		# 	korela kurkijoki konevets joensuu sordavala vartsila ilomantsi lieksa juuka salmi loimola mohko
-		# 	toksovo
-		# 	vyborg villmanstrand veckelax vederlax valkeasaari kyyrola beryozovskoye heinjoki jaskis
-		# }
+        KRL = {
+            type = pop
+            add_pops_from_locations = {
+                maloshuyka sumsky_posad unezhma vygozero
+                chelmuzhi
+                repola karhumagi kizhi lindjarvi nadvoitsy puatane sellinkyla
+                shuya_karelia kondpoga
+                tunkuo ontajarvi
+                kem saarijoki
+                korela kurkijoki konevets joensuu sordavala vartsila ilomantsi lieksa juuka salmi loimola mohko
+                toksovo
+                vyborg villmanstrand veckelax vederlax valkeasaari kyyrola beryozovskoye heinjoki jaskis
+            }
 
-        own_control_core = {
-            kononsaari konevetas korela kurkijoki sordavala loimola salmi vartsila suojarvi ilomantsi mohko lieksa joensuu juuka nurmes
+            discovered_regions = {
+                scandinavian_region
+            }
+            discovered_areas = {
+                pomorye_area
+                kola_area
+                arkhangelsk_area
+                west_novgorod_area
+            }
+
+
+            starting_technology_level = 0
+            include = "eurasian_tribe"
+            government = {
+                type = tribe
+                heir_selection = tribal_oldest_male
+                ruler = random
+            }
         }
-
-        own_control_integrated = {
-            toksovo
-        }
-
-		discovered_regions = {
-			scandinavian_region
-		}
-		discovered_areas = {
-			pomorye_area
-			kola_area
-			arkhangelsk_area
-			west_novgorod_area
-		}
-
-
-		starting_technology_level = 3
-        include = "expl_scandinavia"
-        include = "catholic_monarchy"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = swe_magnus_eriksson
-		}
-	}
 
 	BJA = {
 		type = pop
@@ -775,11 +775,9 @@ countries = {
 		}
 		
 		own_control_integrated = {
-			parnu  valmiera viljandi kaina
-			karksi poltsamaa  kandava dobele bauska sigulda cesis aluksne
+            kandava dobele bauska
 			rezekne daugavpils selpils kraslava jelgava  tukums
-			saarde suure_jaani makonkalns aizkraukle salaspils  saldus
-			paide
+            makonkalns aizkraukle  saldus
 			ventspils grobina kuldiga durbe
 		}
 		
@@ -815,7 +813,7 @@ countries = {
 		}
 
 		country_rank = rank_duchy
-		capital = parnu
+		capital = jelgava
 	}
 
 	ERM = { #Ermland / Warmia
@@ -989,30 +987,9 @@ countries = {
 	#	country_rank = rank_county
 	#}
 
-	RIG = { #Riga
-		own_control_core = {
-			riga
-		}
-
-		include = "catholic_republic"
-		include = "expl_northern_europe"
-		government = {
-			type = republic
-			heir_selection = oligarchic_elective
-			ruler = random
-		}
-
-		tolerated_cultures = {
-			latvian liv
-		}
-
-		country_rank = rank_duchy
-		capital = riga
-	}
-
 	ARR = { #Archbishopric of Riga https://en.wikipedia.org/wiki/Archbishopric_of_Riga
 		own_control_core = {
-			gulbene jekabpils koknese limbazi pietalava rauna straupe vilaka
+            jekabpils  pietalava vilaka
 		}
 
 		include = "catholic_bishopric"
@@ -1032,7 +1009,7 @@ countries = {
 			latvian
 		}
 
-		capital = limbazi
+		capital = pietalava
 	}
 
 	KUR = { #Courland
@@ -1060,56 +1037,6 @@ countries = {
 		}
 
 		capital = piltene
-	}
-
-	BIO = {
-		own_control_core = {
-			hapsal lihula st_martin
-		}
-
-		include = "catholic_bishopric"
-		include = "expl_northern_europe"
-
-		government = {
-			type = theocracy
-
-			ruler = bio_jakob_ii
-			ruler_term = {	character = bio_jakob_ii start_date = 1322.1.1 regnal_number = 2	}
-			regnal_numbers = {
-				name_james = 2
-			}
-		}
-
-		tolerated_cultures = {
-			estonian
-		}
-
-		capital = hapsal
-	}
-
-	BID = {
-		own_control_core = {
-			tartu valka vastseliina vonnu
-		}
-
-		include = "catholic_bishopric_no_coast"
-		include = "expl_northern_europe"
-
-		government = {
-			type = theocracy
-
-			ruler = bid_engelbert_von_dolen
-			ruler_term = {	character = bid_engelbert_von_dolen start_date = 1323.1.1 regnal_number = 1	}
-			regnal_numbers = {
-				name_engelbert = 1
-			}
-		}
-
-		tolerated_cultures = {
-			estonian
-		}
-
-		capital = tartu
 	}
 
 	HSA = {	#Hansa
@@ -1893,8 +1820,8 @@ countries = {
 	#Novgorod
 	NOV = {
 		own_control_core = {
-			martyshkino koporye soikino yama burga khotsy kulotino megrino moloskovitsa khotchino lisino markovo lyady mezhutka
-			novgorod golino staropolye staraya_russa chudovo kosichkoj zaplyusye kresttsy yazhelbitsy berezovets nebolchi
+			    burga khotsy kulotino megrino     lyady mezhutka
+			novgorod golino  staraya_russa chudovo kosichkoj zaplyusye kresttsy yazhelbitsy berezovets nebolchi
 			kholm velikiye_luki demon soltsy nalyuchi dolchinyo vlitsy sumino nadvoitsy
 			staraya_ladoga tikhvin lipno_nov borovichi pikalyovo soltsy_kirishi maselga spirkovo lyubytino
 			olonets vazhiny shuya_karelia kondpoga kizhi shyoltozero lindjarvi semcojarvi lodenoye_pole vytegra vinnitsy
@@ -1908,12 +1835,16 @@ countries = {
 			ilyinsko_podomskoye ust_vayenga
 			porkhov plyussa dubronjo spas_na_kholmu
 			rzheva_pustaya ashevo bezhanitsy podberezye visokoye kuretsk lyakhovichy maryovo lyubno svinort gorodets_luga izori tesov
-			bronnitsa gruzino veliky_porog valday pribuzh ivangorod izboishchi pashozero tervenichi megra voznesenye ostrechiny andomsky_pogost
+			bronnitsa gruzino veliky_porog valday pribuzh  izboishchi pashozero tervenichi megra voznesenye ostrechiny andomsky_pogost
 			kinerma pryazha sellinkyla karhumagi puatane saarijoki sumsky_posad unezhma vygozero maloshuyka
 			chelmuzhi vodlozero shalskii rakitnya mikshino bernovo yezsk lyuban
 			#Principality of Volokolansk
 			volok
 		}
+
+        our_cores_conquered_by_others = {
+            martyshkino lisino markovo koporye khotchino moloskovitsa yama soikino ivangorod staropolye
+        }
 
 		starting_technology_level = 3
 
