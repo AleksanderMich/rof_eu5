@@ -1,5 +1,5 @@
 american_culture = {
-    language = american_language
+    language = american_dialect
 
     color = map_GTV
 }

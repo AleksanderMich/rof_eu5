@@ -1,0 +1,7 @@
+RUS = {
+    color = map_RUS
+    color2 = rgb { 96 131 80 }
+
+    culture_definition = muscovite
+    religion_definition = orthodox
+}
